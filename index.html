@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 2</title>
+        <meta name = "viewport" content = "with = device-width", initial-scale = "1.0">
+        <link rel = "stylesheet" href = " style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!--google fonts below-->
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel = "stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--Header section (navigation)-->
+    <section class = "header" style = "background-image: linear-gradient(rgba(92, 123, 151, 0.4), rgba(92, 146, 172, 0.4)), url(images/background2.jpg);">
+        <nav>
+            <!--The link below is for when the user clicks the logo, return to homepage-->
+            <a href = "index.html"><img src = "images/Black-logo-no-background.png"></a> 
+            <div class = "navbar" id = "navbar">
+                <!--Below is a closing button for mini devices-->
+                 <i class = "fa fa-window-close-o" onclick = "hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href = "index.html">home</a>
+                    </li>
+                    <li>
+                        <a href = "#">about</a>
+                    </li>
+                    <li>
+                        <a href = "profile.html">profile</a>
+                    </li>
+                    <li>
+                        <a href = "newsfeed.html">newsfeed</a>
+                    </li>
+                    <li>
+                        <a href = "contact.html">contact</a>
+                    </li>
+                    <li>
+                        <button class = "login"><a href = "login.html">Login</a></button>
+                    </li>
+                </ul>
+            </div>
+            <i class = "fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    <div class = "welcome">
+        <h1>Welcome to 23:59, at your service</h1>
+        <p>We ensure that you get all the necessary resources to excel in your studies</p>
+    </div>
+        <!--Javascript toggle menu in mini devices-->
+        <script>
+            var navbar = document.getElementById("navbar");
+            //function for showing menu
+            function showMenu(){
+                navbar.style.right = "0";
+            }
+            //function to hide menu
+            function hideMenu(){
+                navbar.style.right = "-220px";
+            }
+            function openForm(){
+                document.getElementById("myForm").style.display = "block";
+            }
+            function closeForm(){
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+
+    </section>
+    <!--An about section-->
+    <section class = "about">
+        <h1>About Us</h1>
+        <p>23:59 was founded by the members below. Our main aim is to update students about what is happening, <br>bringing resources in order to improve on their academics</p>
+        <div class = "row">
+            <div class = "column">
+                <div class = "team">
+                <img src = "images/team.jpg" alt = "Coselela" height = "200px">
+                <div class="container">
+                    <h2>Mr C Nomdidi</h2>
+                    <p class="title">Back-end Developer</p>
+                    <p>217086578@mycput.ac.za</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+                </div>
+            </div>
+            <!--//second person-->
+            <div class = "column">
+                <div class = "team">
+                    <img src = "images/team.jpg" alt = "Chulumanco" height = "200px">
+                    <div class="container">
+                    <h2>Miss C Nkwindana</h2>
+                    <p class="title">Back-end Developer</p>
+                    <p>219390083@mycput.ac.za</p>
+                    <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <!--Third person-->
+            <div class = "column">
+                <div class = "team">
+                    <img src = "images/team.jpg" alt = "Lutho" height = "200px">
+                    <div class = "container">
+                    <h2>Mr L Nondala</h2>
+                    <p class = "title">Back-end Developer</p>
+                    <p>219369399@mycput.ac.za</p>
+                    <p><button class = "button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <!--Fourth person-->
+            <div class = "column">
+                <div class = "team-1">
+                    <img src = "images/team.jpg" alt = "Thina" height = "200px">
+                    <div class="container">
+                    <h2>Mr TM Nontwabaza</h2>
+                    <p class = "title">Front-end Developer</p>
+                    <p>219189153@mycput.ac.za</p>
+                    <p><button class = "button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <!--Fifth person-->
+            <div class = "column">
+                <div class = "team">
+                    <img src = "images/team.jpg" alt = "Joshua" height = "200px">
+                    <div class="container">
+                    <h2>Mr JD Nolte</h2>
+                    <p class = "title">Front-end Developer</p>
+                    <p>219342717@mycput.ac.za</p>
+                    <p><button class = "button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <!--Get to know more-->
+
+    </section>
+      <!--Footer-->
+    <section class = "footer">
+        <p><span>&#169</span> Copyrights 2021 || 23:59 || All rights reserved </p>
+    </section>
+
+    </body>
+</html>
